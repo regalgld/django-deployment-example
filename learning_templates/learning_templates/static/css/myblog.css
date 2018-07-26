@@ -1,0 +1,12 @@
+body{
+  background: red;
+}
+.sidebar{
+  background: gray;
+  float:left;
+  color: blue;
+}
+
+.content{
+  background: blue;
+}

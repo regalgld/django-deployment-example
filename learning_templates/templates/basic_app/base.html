@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"> <img src="images/logo.png" alt="" height=80px> </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#topClick"> <span class="navbar-toggler-icon"></span> </button>
+        <div class=" collapse navbar-collapse" id="topClick">
+          <ul class="navbar-nav ">
+            <li> <a href="{% url 'index' %}" class="nav-link active">Home</a> </li>
+            <li> <a href="{% url 'admin:index' %}" class="nav-link">Admin Page</a> </li>
+            <li> <a href="{%  url 'basic_app:other'%}" class="nav-link">Other</a> </li>
+            <
+          </ul>
+
+        </div>
+
+
+      </div>
+
+    </nav>
+<div class="container">
+  {% block body_block %}
+  {% endblock %}
+
+</div>
+  </body>
+</html>
